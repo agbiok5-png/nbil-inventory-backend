@@ -270,7 +270,7 @@ def login():
     conn.close()
 
     # Create access token
-    access_token = create_access_token(identity=str(user['id'])
+    access_token = create_access_token(identity=str(user['id']))
 
     return jsonify({
         "message": "Login successful",
